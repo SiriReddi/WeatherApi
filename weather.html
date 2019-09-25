@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather Report...</title>
+    <!-- <link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <form class="form" id="cityForm">
+            <div class="field">
+                <label class="label">Location</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Location">
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link" type="submit">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-text" type="reset">Cancel</button>
+                </div>
+            </div>
+        </form>
+        <div id="weatherContainer" data-weather class="container--weather">
+            <h2 class="title">Weather Info</h2>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   
+    <script src="getweather.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
